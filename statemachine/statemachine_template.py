@@ -1,6 +1,3 @@
-# Give me code for a state machine in python that has three states: 'A', 'B', and 'C'.
-# how to turn off copilot suggestions
-
 import logging
 
 logging.basicConfig(
@@ -29,7 +26,6 @@ class StateMachine:
     def __init__(self):
         self.state: State = State.NULL
         self.next_state: State = State.INIT
-        self.logflow: Callable = self.log_statemachine_flow
         self.counter: int = 0
         self.exit_condition: bool = False
 
@@ -42,10 +38,6 @@ class StateMachine:
             State.ERROR: {Signal.NEXT_STATE: State.EXIT},
             State.EXIT: {}
         }
-
-    def log_statemachine_flow(self):
-        print ("Log statemachine flow")
-
 
     def get_state(self) -> str:
         return self.state.value

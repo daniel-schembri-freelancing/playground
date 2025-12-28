@@ -1,3 +1,90 @@
+# CPP related ignores
+*.exe
+*.obj
+
+############################
+# Build artifacts
+############################
+build/
+build-*/
+out/
+bin/
+obj/
+*.o
+*.obj
+*.lo
+*.a
+*.lib
+*.so
+*.so.*
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+
+############################
+# CMake
+############################
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+*.cmake.user
+*.cmake.cache
+
+############################
+# Visual Studio / MSVC
+############################
+.vs/
+*.pdb
+*.ilk
+*.idb
+*.iobj
+*.ipdb
+*.sln
+*.vcxproj*
+*.filters
+*.user
+*.tlog
+*.log
+
+############################
+# VSCode
+############################
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
+
+############################
+# GCC / Clang
+############################
+*.gcda
+*.gcno
+*.gcov
+*.dSYM/
+*.stackdump
+
+############################
+# Precompiled headers
+############################
+*.gch
+*.pch
+
+############################
+# OS / Editor noise
+############################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+*~
+
+# Python related ignores
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
